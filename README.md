@@ -1,0 +1,13 @@
+  ## 기업과제 4 : 텍스트 요약 모델링
+  - [보고서](https://github.com/crosstar1228/wanted_pre_onboarding/blob/main/%5BWanted%5D%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C4_%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC%EC%9A%94%EC%95%BD%EB%AA%A8%EB%8D%B8%EB%A7%81/Report/%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C4_2%ED%8C%80_%EB%A5%98%EC%A0%9C%EC%84%B1_%EA%B0%9C%EC%9D%B8%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)
+  - [기업과제4_2팀.ipynb](https://github.com/crosstar1228/wanted_pre_onboarding/blob/main/%5BWanted%5D%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C4_%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC%EC%9A%94%EC%95%BD%EB%AA%A8%EB%8D%B8%EB%A7%81/%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C4_2%ED%8C%80.ipynb): 
+    - 전처리 및 EDA
+    - Train,validation
+    - hyperparameter tuning 
+    - metric 개발
+    - metric 기반 testing
+    - 요약 결과 분석
+  - [metrics.py](https://github.com/crosstar1228/wanted_pre_onboarding/blob/main/%5BWanted%5D%EA%B8%B0%EC%97%85%EA%B3%BC%EC%A0%9C4_%EB%89%B4%EC%8A%A4%EA%B8%B0%EC%82%AC%EC%9A%94%EC%95%BD%EB%AA%A8%EB%8D%B8%EB%A7%81/metrics.py)
+    - `metric_embed` : SentenceTransformer 기반 의미적 유사도 Score
+    - `metric_rouge` : 형태소 기반 형태적 유사도 Score(Rouge f-1 Score)
+    - `metric` : `metric_embed` 과 `metric_rouge`의 평균
